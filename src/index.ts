@@ -1,3 +1,4 @@
 import "./template/styles.scss";
+import Core from "./core";
 
-console.log("teste");
+Core.createApp();
