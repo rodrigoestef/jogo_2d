@@ -1,6 +1,8 @@
 class Core {
   constructor() {
-    alert("teste");
+    document.querySelector("#max").addEventListener("click", (e) => {
+      document.querySelector("canvas").requestFullscreen();
+    });
   }
   static createApp<T extends typeof Core>(): InstanceType<T> {
     return new this() as InstanceType<T>;
